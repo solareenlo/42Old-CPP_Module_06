@@ -1,0 +1,18 @@
+name: Sanitizer
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  sanitizer:
+    runs-on: ubuntu-latest
+
+    name: sanitizer
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run Sanitizer
+        run: sh ./test/test_sanitizer.sh
