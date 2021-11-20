@@ -6,7 +6,7 @@
 /*   By: tayamamo <tayamamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 06:59:14 by tayamamo          #+#    #+#             */
-/*   Updated: 2021/11/21 07:31:48 by tayamamo         ###   ########.fr       */
+/*   Updated: 2021/11/21 07:38:30 by tayamamo         ###   ########.fr       */
 /*   Copyright 2021                                                           */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 #include "C.hpp"
 
 Base* generate(void) {
-    switch (rand() % 3) {
+    switch (std::rand() % 3) {
         case 0:
             return new A();
         case 1:
@@ -65,7 +65,7 @@ void identify(Base& p) {
 }
 
 int main() {
-    srand(time(NULL));
+    std::srand(time(NULL));
 
     for (int i = 0; i < 3; i++) {
         Base* pbase = generate();
