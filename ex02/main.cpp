@@ -6,7 +6,7 @@
 /*   By: tayamamo <tayamamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 06:59:14 by tayamamo          #+#    #+#             */
-/*   Updated: 2021/11/21 07:38:30 by tayamamo         ###   ########.fr       */
+/*   Updated: 2021/11/21 08:37:01 by tayamamo         ###   ########.fr       */
 /*   Copyright 2021                                                           */
 /* ************************************************************************** */
 
@@ -66,6 +66,13 @@ void identify(Base& p) {
 
 int main() {
     std::srand(time(NULL));
+
+    Base* ptr_unknown = new Base();
+    std::cout << "Pointer  : ";
+    identify(ptr_unknown);
+    std::cout << "Reference: ";
+    identify(*ptr_unknown);
+    delete ptr_unknown;
 
     for (int i = 0; i < 3; i++) {
         Base* pbase = generate();
