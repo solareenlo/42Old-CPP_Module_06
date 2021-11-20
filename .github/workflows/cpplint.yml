@@ -10,5 +10,6 @@ jobs:
 
     - uses: actions/setup-python@v1
 
-    - run: pip install cpplint
-    - run: cpplint --recursive .
+    - run: |
+        pip install cpplint
+        sh ./test/test_cpplint.sh
