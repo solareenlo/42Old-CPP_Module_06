@@ -29,7 +29,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review # Change reporter.
-          path: "." # Optional.
+          path: "./test/" # Optional.
           pattern: "*.sh" # Optional.
           exclude: "./.git/*" # Optional.
           shellcheck_flags: "--external-sources -e SC2086"
