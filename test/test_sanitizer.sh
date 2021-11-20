@@ -8,3 +8,8 @@ make -C ex01 address
 make -C ex01 leak
 make -C ex01 thread
 make -C ex01 memory
+
+make -C ex02 address
+make -C ex02 leak
+make -C ex02 thread
+make -C ex02 memory
