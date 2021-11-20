@@ -33,14 +33,3 @@ jobs:
           pattern: "*.sh" # Optional.
           exclude: "./.git/*" # Optional.
           shellcheck_flags: "--external-sources -e SC2086"
-  sanitizer:
-    name: sanitizer
-    runs-on: ubuntu-latest
-    steps:
-      - name: Setup reviewdog
-        uses: reviewdog/action-setup@v1.0.3
-      - name: Run sanitizer
-        env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          reviewdog -reporter=github-pr-review -runners="sh ./test/*.sh"
