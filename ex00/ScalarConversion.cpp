@@ -6,7 +6,7 @@
 /*   By: tayamamo <tayamamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 15:07:26 by tayamamo          #+#    #+#             */
-/*   Updated: 2021/11/21 03:16:40 by tayamamo         ###   ########.fr       */
+/*   Updated: 2021/11/21 09:03:03 by tayamamo         ###   ########.fr       */
 /*   Copyright 2021                                                           */
 /* ************************************************************************** */
 
@@ -193,7 +193,7 @@ void ScalarConversion::asFloat() {
     } catch (std::exception& e) {
         std::cout << e.what() << std::endl;
     }
-    std::cout << std::defaultfloat;
+    std::cout << std::fixed;
 }
 
 void ScalarConversion::asDboule() {
@@ -219,7 +219,7 @@ void ScalarConversion::asDboule() {
     } catch (std::exception& e) {
         std::cout << e.what() << std::endl;
     }
-    std::cout << std::defaultfloat;
+    std::cout << std::fixed;
 }
 
 char const* ScalarConversion::Fatal::what() const throw() { return "fatal"; }

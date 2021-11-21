@@ -6,13 +6,15 @@
 /*   By: tayamamo <tayamamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 15:02:10 by tayamamo          #+#    #+#             */
-/*   Updated: 2021/11/21 02:09:39 by tayamamo         ###   ########.fr       */
+/*   Updated: 2021/11/21 08:57:02 by tayamamo         ###   ########.fr       */
 /*   Copyright 2021                                                           */
 /* ************************************************************************** */
 
 #ifndef EX00_SCALARCONVERSION_HPP_
 #define EX00_SCALARCONVERSION_HPP_
 
+#include <cerrno>
+#include <cstdlib>
 #include <iomanip>
 #include <iostream>
 #include <limits>
