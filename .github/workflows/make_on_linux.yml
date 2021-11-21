@@ -1,4 +1,4 @@
-name: Make_Linux
+name: Make on Linux
 
 on:
   push:
@@ -7,12 +7,12 @@ on:
     branches: [ main ]
 
 jobs:
-  make_linux:
+  make_on_linux:
     runs-on: ubuntu-latest
 
-    name: make_linux
+    name: make_on_linux
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run make re
-        run: sh ./test/test_make_linux.sh
+      - name: Run make re on Linux
+        run: sh ./test/test_make_on_linux.sh
